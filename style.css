@@ -50,6 +50,9 @@ html, body{
         text-decoration: none;
         padding: .5em;
     }
+    .nav a:hover{
+        background-color: rgb(40, 216, 157);
+    }
     
     
 
@@ -68,12 +71,10 @@ html, body{
         text-align: center;
         width: 40%;
     }
-
-    .menu-image{
+    .chicken-image{
         width: 50%;
         max-width: 600px;
     }
-
     .dogs-image{
         width: 50%;
         max-width: 600px;
@@ -103,3 +104,69 @@ html, body{
         font-size: 2em;
         color: white;
     }
+
+.menu{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .menu-header{
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+        .small-menu-header{
+            text-align: center;
+            font-size: 1.5em;
+        }
+    .menu-item{
+        background-color: rgb(235, 235, 235);
+        margin: 20px;
+        border: 1px solid rgb(235, 235, 235);
+    }
+    .menu-item p{
+        font-size: 1.2em;
+        padding-left: .5em;
+    }
+    .menu-item-image{
+        width: 400px;
+        height: 410px;
+    }
+    .menu-item-name{
+        font-weight: bold;
+    }
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 20px 0px;
+    background-color: aquamarine;
+}
+    footer ul{
+        margin: 0;
+    }
+    .logo{
+        width: 75px;
+    }
+    .company-name{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .store-connection{
+        text-align: center;
+    }
+        .store-connection a{
+            text-decoration: none;
+        }
+        .store-connection p{
+            padding: 10px 0;
+            font-weight: 700;
+        }
+        .store-connection p:hover{
+            background-color: rgb(104, 224, 184);
+        }
