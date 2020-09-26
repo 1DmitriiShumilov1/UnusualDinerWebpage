@@ -105,7 +105,7 @@ html, body{
         color: white;
     }
 
-.menu{
+.menu, .cater-section{
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -126,17 +126,35 @@ html, body{
         margin: 20px;
         border: 1px solid rgb(235, 235, 235);
     }
-    .menu-item p{
-        font-size: 1.2em;
-        padding-left: .5em;
-    }
-    .menu-item-image{
-        width: 400px;
-        height: 410px;
-    }
-    .menu-item-name{
-        font-weight: bold;
-    }
+        .menu-item p{
+            font-size: 1.2em;
+            padding-left: .5em;
+        }
+        .menu-item-image{
+            width: 400px;
+            height: 410px;
+        }
+        .menu-item-name{
+            font-weight: bold;
+        }
+            .menu-item-name-hot{
+                color: red;
+            }
+        .menu-item span{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+            .menu-item span button{
+                margin-right: 5px;
+                font-size: 1.2em;
+                background-color: lavender;
+                outline: none;
+            }
+                .menu-item span button:hover{
+                    cursor: pointer;
+                }
 
 
 .footer-container{
@@ -188,6 +206,8 @@ html, body{
         text-align: center;
     }
     .catering-intro p{
+        text-align: center;
+        width: 60%;
         color: white;
         font-size: 1.3em;
         font-weight: lighter;
