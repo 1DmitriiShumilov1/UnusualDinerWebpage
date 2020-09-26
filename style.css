@@ -212,3 +212,47 @@ html, body{
         font-size: 1.3em;
         font-weight: lighter;
     }
+
+.cart{
+    margin: 20px auto;
+    width: 70%;
+    background-color: khaki;
+}
+    .cart tr th:first-child, .cart tr td:first-child{
+        width: 90%;
+    }
+    .cart tr{
+        background-color: lavender;
+    }
+    .cart-item{
+        display: flex;
+        align-items: center;
+    }
+        .cart-item-info{
+            margin-left: 10px;
+        }
+            .cart-item-title{
+                font-weight: bold;
+            }
+            .cart-item-action{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .cart-item-action button{
+                    height: 50%;
+                    background-color: lightcoral;
+                    color:white;
+                    outline: none;
+                    border-radius: 10%;
+                }
+                .cart-item-action button:hover{
+                    cursor: pointer;
+                }
+        .cart-item-image{
+            width: 25%;
+        }
+        .cart-item-quantity{
+            width: 50px;
+            margin: 0 37.5%;
+        }
