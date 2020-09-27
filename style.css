@@ -218,12 +218,15 @@ html, body{
     width: 70%;
     background-color: khaki;
 }
-    .cart tr th:first-child, .cart tr td:first-child{
-        width: 90%;
-    }
     .cart tr{
         background-color: lavender;
     }
+        .cart tr th:first-child, .cart tr td:first-child{
+            width: 90%;
+        }
+        .cart tr td:last-child{
+            text-align: center;
+        }
     .cart-item{
         display: flex;
         align-items: center;
@@ -254,5 +257,5 @@ html, body{
         }
         .cart-item-quantity{
             width: 50px;
-            margin: 0 37.5%;
+            height: 25px;
         }
