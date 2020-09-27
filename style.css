@@ -154,6 +154,7 @@ html, body{
             }
                 .menu-item span button:hover{
                     cursor: pointer;
+                    background-color: rgb(210, 210, 230);
                 }
 
 
@@ -216,7 +217,7 @@ html, body{
 .cart{
     margin: 20px auto;
     width: 70%;
-    background-color: khaki;
+    background-color: rgb(167, 242, 255);
 }
     .cart tr{
         background-color: lavender;
@@ -249,13 +250,34 @@ html, body{
                     outline: none;
                     border-radius: 10%;
                 }
-                .cart-item-action button:hover{
-                    cursor: pointer;
-                }
+                    .cart-item-action button:hover{
+                        cursor: pointer;
+                        background-color: lightcoral;
+                    }
         .cart-item-image{
             width: 25%;
         }
         .cart-item-quantity{
             width: 50px;
             height: 25px;
+        }
+
+.purchase-button-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+    .purchase-button{
+        height: 50px;
+        width: 100px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        background-color: rgb(85, 214, 113);
+        outline: none;
+    }
+        .purchase-button:hover{
+            background-color: rgb(74, 190, 100);
+            cursor: pointer;
         }
