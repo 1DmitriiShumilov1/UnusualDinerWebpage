@@ -282,3 +282,23 @@ html, body{
             background-color: rgb(74, 190, 100);
             cursor: pointer;
         }
+
+
+
+
+.rewards-intro{
+    background-image: linear-gradient(to bottom right, rgb(141, 250, 119), rgb(255, 255, 6));
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: multiply;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .rewards-intro-paragraph{
+        text-align: center;
+        width: 60%;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        font-weight: lighter;
+    }

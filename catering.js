@@ -51,12 +51,25 @@ function ready(){
 }
 
 function purchaseClicked(){
-    alert('thank you for your purchase!')
     var cartItems = document.getElementsByClassName('js-cart')[0]
-    while (cartItems.hasChildNodes()){
-        cartItems.removeChild(cartItems.firstChild)
+    var listOfCartItems = []
+    var RequiredItem = cartItems.getElementsByClassName('js-required-cart-item')
+    for (var i = 0; i< cartItems.children.length; i++){
+        listOfCartItems.push(RequiredItem[i])
     }
-    updateCartTotal()
+    listOfCartItems = listOfCartItems.filter(function( element ) {
+        return element !== undefined;
+    });
+     console.log(listOfCartItems.length)
+     if (listOfCartItems.length == 5){
+        alert('thank you for your purchase!')
+        while (cartItems.hasChildNodes()){
+            cartItems.removeChild(cartItems.firstChild)
+        }
+        updateCartTotal()
+    } else {
+        alert('Sorry, but you have to select at least 1 piece of chicken, 1 side of beans and rice, and 2 sides of sauce to make a catering order')
+    }
 }
 
 function removeCartItem(event){
@@ -135,12 +148,12 @@ function addChickenToCart(title, price, imageSrc){
     for (var i = 0; i < cartItemNames.length; i++){
         if ( cartItemNames[i].innerText == 'Chicken Legs (6 pc)' || 'Chicken Wings (9 pc)' || 'Chicken Breast (2 pc)' && 
              title == 'Chicken Legs (6 pc)' || 'Chicken Wings (9 pc)' || 'Chicken Breast (2 pc)'){
-            alert('You can add only one type of chicken for your catering')
+            alert('You can add only one piece of chicken for your catering order')
             return
         }
     }
     var cartRowContents = `
-    <td>
+    <td class="js-required-cart-item">
         <div class="cart-item">
             <img class="cart-item-image" src="${imageSrc}">
             <span class="cart-item-info">
@@ -169,12 +182,12 @@ function addBeansToCart(title, price, imageSrc){
     for (var i = 0; i < cartItemNames.length; i++){
         if ( cartItemNames[i].innerText == 'Black Beans (32 oz)' || 'Pinto Beans (32 oz)' &&
              title == 'Black Beans (32 oz)' || 'Pinto Beans (32 oz)'){
-            alert('You can add only one type of beans for your catering')
+            alert('You can add only one type of beans for your catering order')
             return
         }
     }
     var cartRowContents = `
-    <td>
+    <td class="js-required-cart-item">
         <div class="cart-item">
             <img class="cart-item-image" src="${imageSrc}">
             <span class="cart-item-info">
@@ -203,12 +216,12 @@ function addRiceToCart(title, price, imageSrc){
     for (var i = 0; i < cartItemNames.length; i++){
         if ( cartItemNames[i].innerText == 'Mexican Rice (32 oz)' || 'Citrus Rice (32 oz)' &&
              title == 'Mexican Rice (32 oz)' || 'Citrus Rice (32 oz)'){
-            alert('You can add only one type of rice for your catering')
+            alert('You can add only one type of rice for your catering order')
             return
         }
     }
     var cartRowContents = `
-    <td>
+    <td class="js-required-cart-item">
         <div class="cart-item">
             <img class="cart-item-image" src="${imageSrc}">
             <span class="cart-item-info">
@@ -240,12 +253,12 @@ function addSauceToCart(title, price, imageSrc){
             return
         }
         if (cartItemNames.length == 2){
-            alert('You can pick only 2 types of sauces')
+            alert('You can pick only 2 types of sauces for your catering order')
             return
         }
     }
     var cartRowContents = `
-    <td>
+    <td class="js-required-cart-item">
         <div class="cart-item">
             <img class="cart-item-image" src="${imageSrc}">
             <span class="cart-item-info">
