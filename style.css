@@ -295,10 +295,114 @@ html, body{
     justify-content: center;
     align-items: center;
 }
-    .rewards-intro-paragraph{
+.rojo-cards-intro{
+    background-image: linear-gradient(to bottom right, rgb(255, 237, 157),rgb(255, 171, 62));;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: multiply;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .rewards-intro-paragraph, .rojo-cards-intro-paragraph{
         text-align: center;
         width: 60%;
         color: rgb(255, 255, 255);
         font-size: 1.5em;
         font-weight: lighter;
     }
+
+.rewards-email-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 253, 199);
+    border-radius: 20px;
+    height: 200px;
+    width: 50%;
+    margin: 130px auto;
+}
+    .mini-icon, .input-email, .button-apply{
+        padding: 5px;
+        margin: 5px;
+    }
+        .mini-icon{
+            height: 50%;
+        }
+        .input-email{
+            width: 60%;
+            border: none;
+            background-color: rgb(216, 253, 199);
+            outline: none;
+            font-size: 1.3em;
+        }
+        .button-apply{
+            background-color: rgb(214, 214, 255);
+            border-radius: 5px;
+            font-weight: 600;
+            border: none;
+            outline: none;
+        }
+            .button-apply:hover{
+                background-color: rgb(184, 184, 253);
+                cursor: pointer;
+            }
+            .button-apply:active{
+                background-color: rgb(124, 124, 255);
+            }
+        .input-email, .button-apply{
+            height: 30%;
+        }
+
+.rojo-card-section{
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .rojo-card-logo{
+        width: 30%;
+        margin-left: 20px;
+    }
+    .rojo-card-description{
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        max-width: 95%;
+        margin: 60px auto 0 auto;
+    }
+    .rojo-card-1, .rojo-card-2, .rojo-card-3, .rojo-card-4{
+        width: 450px;
+        height: 282.6px;
+        /* the width and the height of these cards has a ratio of a common credit card, which is 0.628*/
+        border-radius: 20px;
+        margin: 20px;
+    }
+        .rojo-card{
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+        }
+        .rojo-card-1{
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            url(images/MainFood-Bowl-1.jpeg);
+        }
+        .rojo-card-2{
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            url(images/mainfood-wrap-2.jpg);
+        }
+        .rojo-card-3{
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            url(images/mainfood-salad-2.jpg);
+        }
+        .rojo-card-4{
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            url(images/chicken-img-main.jpg);
+        }
+
+.rojo-card-info{
+    text-align: center;
+    font-size: .8em;
+}
