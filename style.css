@@ -80,7 +80,50 @@ html, body{
         max-width: 600px;
     }
 
+.careers-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    width: 70%;
+    height: 400px;
+}
+    .careers-intro-paragraph{
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 5%;
+        text-align: left;
+        width: 40%;
+    }
 
+.careers-options{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+    .careers-options-inside{
+        width: 33.3333%;
+        height: 300px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, .3);
+        background-blend-mode: multiply;
+        color: white;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .background-1{
+            background-image: url(images/careers-job-1.jpg);
+        }
+        .background-2{
+            background-image: url(images/careers-job-2.jpg);
+        }
+        .background-3{
+            background-image: url(images/careers-job-3.jpg);
+        }
 
 .section-break{
     background-color: lavenderblush;
@@ -386,20 +429,20 @@ html, body{
             background-blend-mode: multiply;
         }
         .rojo-card-1{
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            background-image: linear-gradient(to bottom, white, black),
             url(images/MainFood-Bowl-1.jpeg);
         }
         .rojo-card-2{
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            background-image: linear-gradient(to bottom, white, black),
             url(images/mainfood-wrap-2.jpg);
         }
         .rojo-card-3{
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
+            background-image: linear-gradient(to bottom, white, black),
             url(images/mainfood-salad-2.jpg);
         }
         .rojo-card-4{
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.733), rgb(0, 0, 0)),
-            url(images/chicken-img-main.jpg);
+            background-image: linear-gradient(to bottom, white, black),
+            url(images/dogs-welcome.jpg)
         }
 
 .rojo-card-info{
