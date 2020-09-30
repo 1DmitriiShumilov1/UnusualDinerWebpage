@@ -431,6 +431,7 @@ html, body{
         .rojo-card-1{
             background-image: linear-gradient(to bottom, white, black),
             url(images/MainFood-Bowl-1.jpeg);
+            position: relative;
         }
         .rojo-card-2{
             background-image: linear-gradient(to bottom, white, black),
