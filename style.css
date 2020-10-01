@@ -23,7 +23,7 @@ html, body{
         height: 60px;
         margin-right: 20px;
     }
-    .logo-and-text p{
+    .main-text-title{
         font-size: 2em;
         font-weight: bold;
         margin: 0;
@@ -38,10 +38,10 @@ html, body{
     background-color: aquamarine;
     height: 80px;
 }
-    .nav ul{
+    .page-titles{
         margin: 0;
     }
-    .nav li{
+    .page-title{
         display: inline;
         font-size: 1.2em;
     }
@@ -449,4 +449,82 @@ html, body{
 .rojo-card-info{
     text-align: center;
     font-size: .8em;
+}
+
+.phone-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+    .phone-icon{
+        width: 80px;
+    }
+
+
+/*---------------------------------------------------------*/
+
+
+@media screen and (max-width: 1100px){
+    /*Header*/
+    .main-text-title{
+        font-size: 1.5em
+    }
+    .main-text-title-under{
+        font-size: .8em;
+    }
+    .page-title{
+        font-size: 1em;
+    }
+    /*------*/
+}
+
+@media screen and (max-width: 830px){
+    /*Header*/
+    .main-text-title{
+        font-size: 1.2em
+    }
+    .main-text-title-under{
+        font-size: .6em;
+    }
+    .page-title{
+        font-size: .8em;
+    }
+    /*------*/
+}
+
+@media screen and (max-width: 700px){
+    /*Header*/
+    .nav{
+        flex-direction: column;
+        height: 280px;
+    }
+    .logo-and-text{
+        display: flex;
+        align-items: center;
+        max-width: 70%;
+        height: 100px;
+    }
+    .main-text-title{
+        font-size: 1.8em
+    }
+    .main-text-title-under{
+        font-size: 1em;
+    }
+    .page-titles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .page-title{
+        border-radius: 20px;
+        font-size: 1.2em;
+    }
+    /*------*/
+
+    /*Footer*/
+    .footer-container{
+        flex-direction: column;
+    }
+    /*------*/
 }
