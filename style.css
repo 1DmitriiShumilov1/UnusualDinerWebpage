@@ -6,6 +6,8 @@
     color: #444;
 }
 
+
+
 html, body{
     margin: 0;
     padding: 0;
@@ -186,7 +188,7 @@ html, body{
             align-items: center;
             width: 100%;
         }
-            .menu-item span button{
+            .add-to-cart{
                 margin-right: 5px;
                 font-size: 1.2em;
                 background-color: lavender;
@@ -413,18 +415,16 @@ html, body{
         max-width: 95%;
         margin: 60px auto 0 auto;
     }
-    .rojo-card-1, .rojo-card-2, .rojo-card-3, .rojo-card-4{
+    .rojo-card{
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
         width: 450px;
         height: 282.6px;
         /* the width and the height of these cards has a ratio of a common credit card, which is 0.628*/
         border-radius: 20px;
         margin: 20px;
     }
-        .rojo-card{
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-        }
         .rojo-card-1{
             background-image: linear-gradient(to bottom, white, black),
             url(images/MainFood-Bowl-1.jpeg);
@@ -446,6 +446,8 @@ html, body{
 .rojo-card-info{
     text-align: center;
     font-size: .8em;
+    width: 90%;
+    margin: 20px auto;
 }
 
 .phone-number{
@@ -474,6 +476,12 @@ html, body{
         font-size: 1em;
     }
     /*------*/
+
+    /*Rewards & Rojo Cards*/
+    .rewards-email-form{
+        width: 80%;
+    }
+    /*--------------------*/
 }
 
 @media screen and (max-width: 830px){
@@ -532,13 +540,61 @@ html, body{
         border-radius: 20px;
         font-size: 1.2em;
     }
+    .menu-item p{
+        padding-left: .5em;
+    }
     /*------*/
+
+    /*Rewards & Rojo Cards*/
+    .rewards-intro-paragraph, .rojo-cards-intro-paragraph{
+        font-size: 1.1em;
+    }
+    /*--------------------*/
 
     /*Footer*/
     .footer-container{
         flex-direction: column;
     }
+    .menu-item-name{
+        padding: 0;
+    }
     /*------*/
+}
+
+@media screen and (max-width: 620px){
+    /*Rewards & Rojo Cards*/
+    .rojo-card-section{
+        width: 100%;
+    }
+        .rojo-card{
+            width: 300px;
+            height: 188.44px;
+        }
+        .rojo-card-description{
+            font-size: .5em;
+        }
+    /*--------------------*/
+}
+
+@media screen and (max-width: 500px){
+    /*Rewards & Rojo Cards*/
+    .rewards-email-form{
+        width: 90%;
+        height: 150px;
+    }
+    .mini-icon{
+        height: 30%;
+    }
+    .button-apply, .input-email{
+        height: 20%;
+    }
+        .button-apply{
+            font-size: .6em;
+        }
+        .input-email{
+            font-size: .8em;
+        }
+    /*--------------------*/
 }
 
 @media screen and (max-width: 450px){
@@ -556,8 +612,45 @@ html, body{
     }
     .menu-item-name{
         text-align: center;
+        margin-bottom: 5px;
+    }
+    .add-to-cart{
+        margin: 20px auto;
+    }
+    .menu-item p{
+        padding-left: 0;
+    }
+    .price{
+        margin: 10px auto;
+    }
+    .menu-item-description{
+        max-height: 200px;
     }
     /*-----------*/
+
+    /*Rewards & Rojo Cards*/
+    .rojo-cards-intro-paragraph{
+        font-size: .9em;
+    }
+    /*--------------------*/
+
+}
+
+@media screen and (max-width: 340px){
+    /*Rewards & Rojo Cards*/
+    .rojo-card-section{
+        background-color: rgb(181, 250, 250);
+        width: 100%;
+    }
+        .rojo-card{
+            width: 200px;
+            height: 125.62px;
+        }
+        .rojo-card-description{
+            font-size: .4em;
+            margin-top: 30px;
+        }
+    /*--------------------*/
 }
 
 @media screen and (max-width: 320px){
@@ -572,4 +665,33 @@ html, body{
         font-size: 1em;
     }
     /*------*/
+
+    /*Rewards & Rojo Cards*/
+    .rewards-email-form{
+        width: 90%;
+        height: 300px;
+        flex-direction: column;
+    }
+        .input-email{
+            background-color: rgb(238, 252, 232);
+            height: 10%;
+            width: 90%;
+            border-radius: 5px;
+        }
+            ::placeholder{
+                text-align: center;
+            }
+        .mini-icon{
+            height: 20%;
+            padding: 0;
+        }
+        .button-apply{
+            height: 10%;
+            margin: 10px;
+        }
+    
+        .rojo-card-info{
+            font-size: .6em;
+        }
+    /*--------------------*/
 }
