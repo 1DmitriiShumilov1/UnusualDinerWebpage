@@ -428,7 +428,6 @@ html, body{
         .rojo-card-1{
             background-image: linear-gradient(to bottom, white, black),
             url(images/MainFood-Bowl-1.jpeg);
-            position: relative;
         }
         .rojo-card-2{
             background-image: linear-gradient(to bottom, white, black),
@@ -481,6 +480,33 @@ html, body{
     .rewards-email-form{
         width: 80%;
     }
+    /*--------------------*/
+
+    /*Careers*/
+    .careers-intro{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .careers-intro-paragraph{
+        margin: 20px;
+        font-size: 1.2em;
+        width: 80%;
+        text-align: center;
+    }
+    .careers-intro-picture{
+        max-width: 70%;
+    }
+    .careers-options{
+        flex-direction: column;
+        width: 100%;
+    }
+        .careers-options-inside{
+            width: 100%
+        }
+        .background-3{
+            background-position: right;
+        }
     /*--------------------*/
 }
 
@@ -689,9 +715,14 @@ html, body{
             height: 10%;
             margin: 10px;
         }
-    
         .rojo-card-info{
             font-size: .6em;
         }
+    /*--------------------*/
+
+    /*Careers*/
+    .careers-options-inside{
+        font-size: 1.2em;
+    }
     /*--------------------*/
 }
