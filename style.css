@@ -570,6 +570,16 @@ html, body{
     }
     /*------*/
 
+    /*'Menu' Page*/
+    .section-break{
+        background-image: url(images/section-break.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 700px;
+    }
+    /*-----------*/
+
     /*Rewards & Rojo Cards*/
     .rewards-intro-paragraph, .rojo-cards-intro-paragraph{
         font-size: 1.1em;
@@ -587,11 +597,6 @@ html, body{
 }
 
 @media screen and (max-width: 620px){
-    /*'Menu' Page*/
-    .section-break{
-        background-attachment: none;
-    }
-    /*-----------*/
 
     /*Rewards & Rojo Cards*/
     .rojo-card-section{
