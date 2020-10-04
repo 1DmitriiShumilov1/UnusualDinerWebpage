@@ -125,7 +125,7 @@ html, body{
         }
 
 .section-break{
-    background-image: url(images/section-break.jpg);
+    background-color: rgb(240, 226, 190);
     background-attachment: fixed;
     background-position: center;
     width: 100%;
