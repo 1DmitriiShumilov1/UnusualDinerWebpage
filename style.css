@@ -129,7 +129,7 @@ html, body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 700px;
 }
 
