@@ -125,9 +125,7 @@ html, body{
         }
 
 .section-break{
-    background-color: lavenderblush;
     background-image: url(images/section-break.jpg);
-    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     width: 100%;
