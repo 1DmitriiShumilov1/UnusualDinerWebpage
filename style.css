@@ -526,6 +526,8 @@ html, body{
     .about-rojo-chicken{
         flex-direction: column;
         width: 90%;
+        max-height: 520px;
+        background-color: darkgrey;
     }
     .about-rojo-chicken-image{
         width: 90%;
